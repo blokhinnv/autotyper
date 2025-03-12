@@ -1,0 +1,13 @@
+[project]
+name = "emulate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "keyboard>=0.13.5",
+    "mypy>=1.15.0",
+    "pyautogui>=0.9.54",
+    "pyperclip>=1.9.0",
+    "tqdm>=4.67.1",
+]
