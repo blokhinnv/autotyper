@@ -19,6 +19,9 @@ if __name__ == "__main__":
     keyboard.wait("f10")
     text_to_type = pyperclip.paste()
     compressed_text = compress_text(text_to_type)
+    print(
+        f"info: original text length: {len(text_to_type)}; compressed text length: {len(compressed_text)}"
+    )
     for char in tqdm(compress_text):
         pyautogui.typewrite(char)
 
