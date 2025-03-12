@@ -11,3 +11,21 @@ dependencies = [
     "pyperclip>=1.9.0",
     "tqdm>=4.67.1",
 ]
+
+[tool.mypy]
+strict = true
+disallow_untyped_calls = false
+allow_redefinition = true
+disallow_any_generics = false
+disallow_subclassing_any = false
+warn_unused_ignores = false
+no_implicit_reexport = false
+
+[[tool.mypy.overrides]]
+module = [
+    "keyboard.*",
+    "pyperclip.*",
+    "pyautogui.*",
+    "tqdm.*"
+]
+ignore_missing_imports = true

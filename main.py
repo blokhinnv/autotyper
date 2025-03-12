@@ -17,7 +17,7 @@ tr = dict(zip(ycuken, qwerty))
 ESCAPE_CHAR = "$"
 
 
-def translate(key):
+def translate(key: str) -> str:
     """Returns qwerty key or the given key itself if no mapping found"""
     return "".join(map(lambda x: tr.get(x, x), key))
 
