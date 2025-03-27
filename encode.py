@@ -22,7 +22,7 @@ if __name__ == "__main__":
     print(
         f"info: original text length: {len(text_to_type)}; compressed text length: {len(compressed_text)}"
     )
-    for char in tqdm(compress_text):
+    for char in tqdm(compressed_text):
         pyautogui.typewrite(char)
 
     print("Text typed.")
