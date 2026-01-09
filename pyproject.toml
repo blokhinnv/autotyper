@@ -5,9 +5,9 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-    "keyboard>=0.13.5",
     "mypy>=1.15.0",
     "pyautogui>=0.9.54",
+    "pynput>=1.7.6",
     "pyperclip>=1.9.0",
     "tqdm>=4.67.1",
 ]
@@ -23,7 +23,7 @@ no_implicit_reexport = false
 
 [[tool.mypy.overrides]]
 module = [
-    "keyboard.*",
+    "pynput.*",
     "pyperclip.*",
     "pyautogui.*",
     "tqdm.*"

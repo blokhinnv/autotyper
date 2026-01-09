@@ -5,7 +5,7 @@ from pathlib import Path
 
 
 def decode_text(text: str) -> str:
-    return zlib.decompress(base64.b64decode(text)).decode()
+    return zlib.decompress(base64.b85decode(text)).decode()
 
 
 if __name__ == "__main__":
